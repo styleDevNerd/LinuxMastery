@@ -6,8 +6,19 @@
 - **CLI (command line interface)** - it's a tool that accepts text input to excute OS functions
 - **~** - is user's home folder of the current directory
 - **/** - forward slash stands for root
+- **/bin** - it contains binary or executable files which are necessary for the OS
+- **/sbin** - files under /sbin should be run or executed by the root user
+- **/lib** - it contains library files which contain code that your application can use
+- **/usr** - /usr/bin and /usr/lib are for all executables and libraries except the ones that are required for booting
+- **/etc** - it contains configuration files
+- **/home** - it contains home directories of all users on the system
+- **/dev** - it contains all device files
+- **/opt** - it contains software that you compiled. Software that you build yourself from a source code
+- **/var** - it contains variable files such as log files
+- **/tmp** - it contains temporary files
 
-## Commands
+
+## Commands - Command Line Interface
 
 - `uptime` - tells how much time your server is up
 - `users` - the name of the users
@@ -29,3 +40,17 @@
     - press Ctrl/Cmd+R - type the command and it will search the command for you
     - press Ctrl/Cmd+R - `!81` 81 is the line number of that command from history
 - `history -c` - it will clear the history
+- `type pwd` - it will tell if a command is built-in or external binary file
+- `which pwd` - it's used to locate the executable file associated with given command
+- `echo PATH` - it will display whatever you want to display on the screen
+- `echo $PATH` - it will add the PATH as a variable
+- `export PATH=/home/udemy1/.local/bin:/home/udemy1/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin` - it will remove the path you want to remove
+- `ls --help` - to get the help about the command with all available options
+- `man echo` - will show traditional system-wide manual pages for commands and configurations
+- `env` - it will show all the environment variables
+- `CATALINA_HOME=/home/udemy1/tomcat` - this will set the variable CATALINE_HOME with the path mentioned
+- `export CATALINA_HOME` - to add any variable to the environment variable list you have to export it
+- `unset CATALINA_HOME` - to remove any variable to the environment variable list you have to export it
+
+## Commands - File Management
+
